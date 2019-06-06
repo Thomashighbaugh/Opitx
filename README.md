@@ -8,11 +8,11 @@ Opitx is different. There are no databases on the back-end and no API calls to c
 
 
 ## Features
-**- Markdown Based Note Taking
-**- Easy Toggle Viewer 
-**- Preview Pane
-**- Storage Freedom 
-**- Highlight JS Syntax Highlighting
+- **Markdown Based Note Taking
+- **Easy Toggle Viewer 
+- **Preview Pane
+- **Storage Freedom 
+- **Highlight JS Syntax Highlighting
 
 #### More Coming Soon!
 
