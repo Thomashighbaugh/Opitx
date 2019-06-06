@@ -1,4 +1,5 @@
 # Opitx MarkDown Editor:
+![Opitx](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/app_resources/icon.png)
 ## Stop Loosing Your Work!
 
 Every Markdown editor for Linux has the same problem, saving. Either your work is saved as some string no human could hope to read or your work won't "sync" properly with the API call the developer coded in to impress hiring managers. 
