@@ -17,11 +17,10 @@ Opitx is different. There are no databases on the back-end and no API calls to c
 #### More Coming Soon!
 
 ## BackUp Work With DropBox 
-If you are like me, you like keeping several backups of your work because you know that if you don't, you are one corrupted OS away from loosing hours of your time. 
-
 Opitx doesn't prevent you from using whatever backup service you want, it just doesn't force you to use its method of doing so (nor is it another lame Elementary OS app). 
 
-If you want to use it with DropBox, the process is simple. Just download the DropBox desktop app for your distribution, then when you save the file just be sure to save it in the DropBox directory and its backed up.
+#### DropBox 
+Just download the DropBox desktop app for your distribution, then when you save the file just be sure to save it in the DropBox directory and its backed up.
 
 #### Want to Restore a BackUp? 
 Simply use the **_OPEN_** command and open a file from your DropBox. 
