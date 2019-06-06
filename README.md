@@ -8,14 +8,13 @@ Opitx is different. There are no databases on the back-end and no API calls to c
 
 
 ## Features
-### - Markdown Based Note Taking
-### - Easy Toggle Viewer 
-### - Syntax Highlighting 
-####  - Python:
-####  - JavaScript
-### - Preview Pane
-### - Storage Freedom 
-## More Coming Soon!
+**- Markdown Based Note Taking
+**- Easy Toggle Viewer 
+**- Preview Pane
+**- Storage Freedom 
+**- Highlight JS Syntax Highlighting
+
+#### More Coming Soon!
 
 ## BackUp Work With DropBox 
 If you are like me, you like keeping several backups of your work because you know that if you don't, you are one corrupted OS away from loosing hours of your time. 
