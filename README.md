@@ -23,7 +23,8 @@ Opitx doesn't prevent you from using whatever backup service you want, it just d
 
 If you want to use it with DropBox, the process is simple. Just download the DropBox desktop app for your distribution, then when you save the file just be sure to save it in the DropBox directory and its backed up.
 
-Want to Restore a BackUp, simply use the **_OPEN_** command and open a file from your DropBox. 
+#### Want to Restore a BackUp? 
+Simply use the **_OPEN_** command and open a file from your DropBox. 
 
 ## Inspiration
 
