@@ -1,6 +1,6 @@
 # Welcome to Opitx
 
-![Opitx Logo]()
+![Opitx Logo](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/app_resources/icon.png)
 
 ## Getting Started 
 If you don't need to see the **Syntax Guide** below, feel free to simply select all (<kbd>CTRL</kbd> + <kbd>A</kbd>) and then hit the Delete key (<kbd>DEL</kbd>) and start writing. 
