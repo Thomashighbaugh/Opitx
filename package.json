@@ -31,8 +31,8 @@
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-pack": "build --em.main=build/main.js",
     "preelectron-pack": "yarn build",
-    "create-debian-installer": "electron-installer-debian --src release-builds/optix-markdown-editor-linux-x64/ --arch amd64 --config debian.json",
-    "package-linux": "electron-packager .  optix-markdown-editor --overwrite --asar=true --platform=linux --arch=x64 --icon=app_resources/logo/svg --prune=true --out=release-builds"
+    "create-debian-installer": "electron-installer-debian --src build/opitx-linux-x64/ --arch amd64 --config debian.json",
+    "package-linux": "electron-packager .  opitx --overwrite --asar=true --platform=linux --arch=x64 --icon=app_resources/logo/svg --prune=true --out=build"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
