@@ -82,10 +82,10 @@ const template = [
       }
     ]
   }
-]
+];
 
 if (process.platform === 'darwin') {
-  const name = app.getName()
+  const name = app.getName();
   template.unshift({
     label: name,
     submenu: [
@@ -136,14 +136,14 @@ function openFile() {
     filters: [
       { name: 'Markdown Files', extensions: ['md', 'markdown', 'txt'] }
     ]
-  })
+  });
 
-  if (!files) return
+  if (!files) return;
 
-  const file = files[0]
-  const content = fs.readFileSync(file).toString()
+  const file = files[0];
+  const content = fs.readFileSync(file).toString();
 
-  app.addRecentDocument(file)
+  app.addRecentDocument(file);
 
   mainWindow.webContents.send('file-opened', file, content)
 }
@@ -185,4 +185,4 @@ app.on('activate', () => {
   }
 });
 
-exports.openFile = openFile
+exports.openFile = openFile;
