@@ -1,10 +1,10 @@
 {
   "name": "opitx",
-  "version": "0.5.5",
+  "version": "0.7.0",
   "author": "Thomas Leon Highbaugh",
   "description": "A MarkDown Editor for Those Who Are Tired of Loosing Their Work",
   "private": false,
-  "main": "public/main.js",
+  "main": "main.js",
   "homepage": "./",
   "dependencies": {
     "@skidding/react-codemirror": "^1.0.0",
