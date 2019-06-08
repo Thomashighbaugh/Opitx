@@ -36,7 +36,7 @@ The idea for this snap came from this [tutorial](https://www.freecodecamp.org/ne
 
 Additional articles that were of value in bringing this app to you were:
 - [Electron's Docs](https://electronjs.org/docs/all)
-- [This tutorial on Electron Packager[(https://www.christianengvall.se/electron-packager-tutorial/)
+- [This tutorial on Electron Packager](https://www.christianengvall.se/electron-packager-tutorial/)
 - [The Electron Builder Linux Tutorial](https://www.electron.build/configuration/linux.html)
 - [This CodeMentor Article on Using React and Electron](https://www.codementor.io/randyfindley/how-to-build-an-electron-app-using-create-react-app-and-electron-builder-ss1k0sfer)
 - [This Article Detailing How to Build a ToDo App](https://codeburst.io/build-a-todo-app-with-electron-d6c61f58b55a)
