@@ -1,4 +1,4 @@
-# Opitx Markdown Editor
+# Welcome to Opitx
 
 ![Opitx Logo](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/app_resources/icon.png)
 

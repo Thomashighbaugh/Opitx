@@ -1,144 +1,146 @@
-const electron = require("electron");
-const fs = require("fs");
+const electron = require('electron');
+const fs = require('fs');
 const app = electron.app;
 const Menu = electron.Menu;
 const dialog = electron.dialog;
 const BrowserWindow = electron.BrowserWindow;
-
-const path = require("path");
-const url = require("url");
-const isDev = require("electron-is-dev");
-
+const mainProcess = require('./main');
+const path = require('path');
+const url = require('url');
+const isDev = require('electron-is-dev');
 let mainWindow;
 
 const template = [
   {
-    label: "File",
+
+    label: 'File',
     submenu: [
       {
-        label: "Open...",
-        accelerator: "CmdOrCtrl+O",
-        click() {
-          openFile();
-        }
+label: ' New ',
+        accelerator: 'CmdOrCtrl+N',
+        click() {createNewFile()}
       },
       {
-        label: "Save...",
-        accelerator: "CmdOrCtrl+S",
-        click() {
+        label: ' Open ',
+        accelerator: 'CmdOrCtrl+O',
+        click () { openFile() }
+      },
+      {
+        label: ' Save ',
+        accelerator: 'CmdOrCtrl+S',
+        click () {
           // We can't call saveFile(content) directly because we need to get
           // the content from the renderer process. So, send a message to the
           // renderer, telling it we want to save the file.
-          mainWindow.webContents.send("save-file");
+          mainWindow.webContents.send('save-file')
         }
       }
     ]
   },
   {
-    label: "Edit",
+    label: 'Edit',
     submenu: [
       {
-        label: "Undo",
-        accelerator: "CmdOrCtrl+Z",
-        role: "undo"
+        label: 'Undo',
+        accelerator: 'CmdOrCtrl+Z',
+        role: 'undo'
       },
       {
-        label: "Redo",
-        accelerator: "Shift+CmdOrCtrl+Z",
-        role: "redo"
+        label: 'Redo',
+        accelerator: 'Shift+CmdOrCtrl+Z',
+        role: 'redo'
       },
       {
-        type: "separator"
+        type: 'separator'
       },
       {
-        label: "Cut",
-        accelerator: "CmdOrCtrl+X",
-        role: "cut"
+        label: 'Cut',
+        accelerator: 'CmdOrCtrl+X',
+        role: 'cut'
       },
       {
-        label: "Copy",
-        accelerator: "CmdOrCtrl+C",
-        role: "copy"
+        label: 'Copy',
+        accelerator: 'CmdOrCtrl+C',
+        role: 'copy'
       },
       {
-        label: "Paste",
-        accelerator: "CmdOrCtrl+V",
-        role: "paste"
+        label: 'Paste',
+        accelerator: 'CmdOrCtrl+V',
+        role: 'paste'
       },
       {
-        label: "Select All",
-        accelerator: "CmdOrCtrl+A",
-        role: "selectall"
+        label: 'Select All',
+        accelerator: 'CmdOrCtrl+A',
+        role: 'selectall'
       }
     ]
   },
   {
-    label: "Developer",
+    label: 'Developer',
     submenu: [
       {
-        label: "Toggle Developer Tools",
-        accelerator:
-          process.platform === "darwin" ? "Alt+Command+I" : "Ctrl+Shift+I",
-        click() {
-          mainWindow.webContents.toggleDevTools();
-        }
+        label: 'Toggle Developer Tools',
+        accelerator: process.platform === 'darwin'
+          ? 'Alt+Command+I'
+          : 'Ctrl+Shift+I',
+        click () { mainWindow.webContents.toggleDevTools() }
       }
     ]
   }
 ];
 
-if (process.platform === "darwin") {
+if (process.platform === 'darwin') {
   const name = app.getName();
   template.unshift({
     label: name,
     submenu: [
       {
-        label: "About " + name,
-        role: "about"
+        label: 'About ' + name,
+        role: 'about'
       },
       {
-        type: "separator"
+        type: 'separator'
       },
       {
-        label: "Services",
-        role: "services",
+        label: 'Services',
+        role: 'services',
         submenu: []
       },
       {
-        type: "separator"
+        type: 'separator'
       },
       {
-        label: "Hide " + name,
-        accelerator: "Command+H",
-        role: "hide"
+        label: 'Hide ' + name,
+        accelerator: 'Command+H',
+        role: 'hide'
       },
       {
-        label: "Hide Others",
-        accelerator: "Command+Alt+H",
-        role: "hideothers"
+        label: 'Hide Others',
+        accelerator: 'Command+Alt+H',
+        role: 'hideothers'
       },
       {
-        label: "Show All",
-        role: "unhide"
+        label: 'Show All',
+        role: 'unhide'
       },
       {
-        type: "separator"
+        type: 'separator'
       },
       {
-        label: "Quit",
-        accelerator: "Command+Q",
-        click() {
-          app.quit();
-        }
+        label: 'Quit',
+        accelerator: 'Command+Q',
+        click () { app.quit() }
       }
     ]
-  });
+  })
 }
 
 function openFile() {
   const files = dialog.showOpenDialog(mainWindow, {
-    properties: ["openFile"],
-    filters: [{ name: "Markdown Files", extensions: ["md", "markdown", "txt"] }]
+    properties: ['openFile'],
+    filters: [
+      { name: 'Markdown Files', extensions: ['md', 'markdown', 'txt'] }
+    ]
   });
 
   if (!files) return;
@@ -148,43 +150,42 @@ function openFile() {
 
   app.addRecentDocument(file);
 
-  mainWindow.webContents.send("file-opened", file, content);
+  mainWindow.webContents.send('file-opened', file, content)
 }
 
 function createWindow() {
   mainWindow = new BrowserWindow({
     width: 900,
-    height: 700,
+    height: 680,
     webPreferences: {
       nodeIntegration: true
     }
   });
-  mainWindow.loadURL(
-    win.loadURL('file://' + __dirname + '/build/index.html')
-  );
+  mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
 
   const menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);
 
   app.setAboutPanelOptions({
     applicationName: "Opitx",
-    applicationVersion: "0.5.5"
+    applicationVersion: "0.0.1",
+    credits: "Thomas Leon Highbaugh"
   });
 
-  mainWindow.on("closed", () => (mainWindow = null));
+  mainWindow.on('closed', () => mainWindow = null);
 }
 
-app.on("ready", createWindow);
+app.on('ready', createWindow);
 
-app.on("window-all-closed", () => {
-  if (process.platform !== "darwin") {
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
     app.quit();
   }
 });
 
-app.on("activate", () => {
+app.on('activate', () => {
   if (mainWindow === null) {
-   mainWindow = createWindow();
+    createWindow();
   }
 });
 

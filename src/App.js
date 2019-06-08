@@ -6,8 +6,8 @@ import Editor from './editor.js';
 import CodeBlock from './code-block.js';
 import Toolbar from './toolbar.js';
 
-import logo from './logo.svg';
 import './App.css';
+import './welcome.md'
 
 require('highlight.js/styles/monokai.css');
 
@@ -33,7 +33,7 @@ class App extends Component {
 
     ipc.on('save-file', (event) => {
       dialog.showSaveDialog((filename) => {
-        if(filename == undefined){
+        if(filename === undefined){
           return;
         }
 
@@ -47,7 +47,7 @@ class App extends Component {
     });
 
     // Open the welcome page
-    const file_name = path.join((isDev ? '' : window.process.resourcesPath), "public/welcome.md");
+    const file_name = path.join("./public/welcome.md");
     const content = fs.readFileSync(file_name).toString();
 
     this.state = {
@@ -68,13 +68,13 @@ class App extends Component {
   onViewChange(e) {
     switch(e) {
       case "editor":
-        this.setState({ splitPaneSize: "100%"})
+        this.setState({ splitPaneSize: "100%"});
         break;
       case "split":
-        this.setState({ splitPaneSize: "50%"})
+        this.setState({ splitPaneSize: "50%"});
         break;
       case "view":
-        this.setState({ splitPaneSize: "0%"})
+        this.setState({ splitPaneSize: "0%"});
         break;
       default:
         break;
