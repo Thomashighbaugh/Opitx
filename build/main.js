@@ -160,7 +160,7 @@ function createWindow() {
     }
   });
   mainWindow.loadURL(
-   `file://${path.join(__dirname, "../build/index.html")}`
+    win.loadURL('file://' + __dirname + '/build/index.html')
   );
 
   const menu = Menu.buildFromTemplate(template);

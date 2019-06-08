@@ -1,6 +1,6 @@
 {
   "name": "opitx",
-  "version": "0.5.5",
+  "version": "0.6.1",
   "author": "Thomas Leon Highbaugh",
   "description": "A MarkDown Editor for Those Who Are Tired of Loosing Their Work",
   "private": false,
@@ -9,7 +9,7 @@
   "dependencies": {
     "@skidding/react-codemirror": "^1.0.0",
     "codemirror": "^5.29.0",
-    "electron-is-dev": "^0.3.0",
+    "electron-is-dev": "^1.1.0",
     "install": "^0.10.1",
     "lodash.assign": "^4.2.0",
     "prettier": "^1.17.1",
@@ -32,16 +32,16 @@
     "electron-pack": "build --em.main=build/main.js",
     "preelectron-pack": "yarn build",
     "create-debian-installer": "electron-installer-debian --src build/opitx-linux-x64/ --arch amd64 --config debian.json",
-    "package-linux": "electron-packager .  opitx --overwrite --asar=true --platform=linux --arch=x64 --icon=app_resources/logo/svg --prune=true --out=build"
+    "package-linux": "electron-packager .  opitx --overwrite --platform=linux --arch=x64 --icon=app_resources/logo/svg --prune=true --out=build"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0",
-    "electron": "^5.0.2",
-    "electron-builder": "^19.26.3",
+    "concurrently": "^4.1.0",
+    "electron": "^5.0.3",
+    "electron-builder": "^20.43.0",
     "electron-packager": "^13.1.1",
     "mocha": "^5.0.5",
     "spectron": "^3.8.0",
-    "wait-on": "^2.0.2"
+    "wait-on": "^3.2.0"
   },
   "build": {
     "appId": "com.mook",
