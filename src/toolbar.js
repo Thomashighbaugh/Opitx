@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 // import FaBeer from 'react-icons/fa/beer';
-import MdFormatAlignLeft from 'react-icons/lib/md/format-align-left'
-import MdChromeReaderMode from 'react-icons/lib/md/chrome-reader-mode'
-import TiEye from 'react-icons/lib/ti/eye'
+import FaArrowCircleRight from 'react-icons/lib/fa/arrow-circle-right'
+import FaArrowCircleDown from 'react-icons/lib/fa/arrow-circle-down'
+import FaArrowCircleLeft from 'react-icons/lib/fa/arrow-circle-left'
 
 class Toolbar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { view: "split"}
+    this.state = { view: "split"};
 
     this.switchToEditor = this.switchToEditor.bind(this);
     this.switchToSplit = this.switchToSplit.bind(this);
@@ -30,9 +30,9 @@ class Toolbar extends Component {
   render() {
     return (
       <div className="toolbar">
-        <MdFormatAlignLeft width="22" height="22" onClick={this.switchToEditor}/>
-        <MdChromeReaderMode width="22" height="22" onClick={this.switchToSplit}/>
-        <TiEye width="22" height="22" onClick={this.switchToView}/>
+        <FaArrowCircleLeft width="40" height="40" onClick={this.switchToView}/>
+        <FaArrowCircleDown width="40" height="40" onClick={this.switchToSplit}/>
+        <FaArrowCircleRight width="40" height="40" onClick={this.switchToEditor}/>
       </div>
     );
   }

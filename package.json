@@ -1,11 +1,14 @@
 {
   "name": "opitx",
   "version": "0.7.0",
-  "author": "Thomas Leon Highbaugh",
+  "author": "Thomas Leon Highbaugh <thighbaugh@zoho.com>",
   "description": "A MarkDown Editor for Those Who Are Tired of Loosing Their Work",
   "private": false,
+  "license": "MIT",
+  "maintainer": "TLH <thighbaugh@zoho.com>",
   "main": "main.js",
   "homepage": "./",
+  "icon": "app_resources/logo.svn",
   "dependencies": {
     "@skidding/react-codemirror": "^1.0.0",
     "codemirror": "^5.29.0",
@@ -20,7 +23,8 @@
     "react-icons": "^2.2.7",
     "react-markdown": "^2.5.0",
     "react-scripts": "1.0.12",
-    "react-split-pane": "^0.1.66"
+    "react-split-pane": "^0.1.66",
+    "rpmbuild": "^0.0.22"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +33,7 @@
     "test": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && mocha\"",
     "eject": "react-scripts eject",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron-pack": "build --em.main=build/main.js",
+    "electron-pack": "build --em.main=build/main.js --linux deb snap AppImage rpm",
     "preelectron-pack": "yarn build",
     "create-debian-installer": "electron-installer-debian --src build/opitx-linux-x64/ --arch amd64 --config debian.json",
     "package-linux": "electron-packager .  opitx --overwrite --asar=true --platform=linux --arch=x64 --icon=app_resources/logo/svg --prune=true --out=build"
@@ -44,7 +48,7 @@
     "wait-on": "^2.0.2"
   },
   "build": {
-    "appId": "com.mook",
+    "appId": "opitx",
     "files": [
       "build/**/*",
       "node_modules/**/*"
