@@ -32,6 +32,17 @@ Simply use the **_OPEN_** command and open a file from your DropBox.
 >> While other apps claim to solve some problem, usually for the developer, my experience with them has been nothing but new and more annoying problems. But don't believe me? Try it out, I think you'll appreciate it and if you don't, who cares it is free!
 - Thomas Leon Highbaugh (Sole Developer/Designer/Owner at Electric Tantra Design and Development)
 
+The idea for this snap came from this [tutorial](https://www.freecodecamp.org/news/heres-how-i-created-a-markdown-app-with-electron-and-react-1e902f8601ca/). While a little dated, the article is a great place to start if you are like me and still getting used to programming Electron apps. 
+
+Additional articles that were of value in bringing this app to you were:
+- [Electron's Docs](https://electronjs.org/docs/all)
+- [This tutorial on Electron Packager[(https://www.christianengvall.se/electron-packager-tutorial/)
+- [The Electron Builder Linux Tutorial](https://www.electron.build/configuration/linux.html)
+- [This CodeMentor Article on Using React and Electron](https://www.codementor.io/randyfindley/how-to-build-an-electron-app-using-create-react-app-and-electron-builder-ss1k0sfer)
+- [This Article Detailing How to Build a ToDo App](https://codeburst.io/build-a-todo-app-with-electron-d6c61f58b55a)
+- [This Article on Preparing an Electron App for Production](https://medium.com/@kitze/%EF%B8%8F-from-react-to-an-electron-app-ready-for-production-a0468ecb1da3)
+
+
 ## macOS and Windows Support
 
 Sorry, I do not use nor intend to ever use either properitery OS. While these may work fine for others, I have no need for these operating systems now that Linux has come into its own and thus will not be supporting them. 
