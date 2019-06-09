@@ -2,9 +2,9 @@
 ![Opitx](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/app_resources/icon.png)
 ## Stop Loosing Your Work!
 
-Every Markdown editor for Linux has the same problem, saving. Either your work is saved as some string no human could hope to read or your work won't "sync" properly with the API call the developer coded in to impress hiring managers. 
+![Opitx Markdown Editor Screenshot](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/Opitx.png)
 
-Opitx is different. There are no databases on the back-end and no API calls to cost you hours of work. Instead Opitx uses good, old fashioned **_SAVE_** and **_OPEN_** letting you configure whatever storage scheme works best for you. 
+Opitx is not your average markdown editor, loaded with unnecessary features that either hide your saved files in some database format you can't read or loaded with features that don't work. There are no databases on the back-end and no API calls to cost you hours of work when there is a hiccup in the syncing process. Instead Opitx uses good, old fashioned **<kbd>_SAVE_</kbd>** and **_OPEN_** letting you configure whatever storage scheme works best for you. 
 
 
 ## Features
@@ -15,6 +15,7 @@ Opitx is different. There are no databases on the back-end and no API calls to c
 - **Highlight JS Syntax Highlighting**
 
 #### More Coming Soon!
+
 
 ## BackUp Work With DropBox 
 Opitx doesn't prevent you from using whatever backup service you want, it just doesn't force you to use its method of doing so (nor is it another lame Elementary OS app). 
