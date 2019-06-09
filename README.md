@@ -1,10 +1,8 @@
 # Opitx MarkDown Editor:
-![Opitx](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/app_resources/icon.png)
-## Stop Loosing Your Work!
-
+## A minimalist markdown editor that puts you in control of your files
 ![Opitx Markdown Editor Screenshot](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/Opitx.png)
 
-Opitx is not your average markdown editor, loaded with unnecessary features that either hide your saved files in some database format you can't read or loaded with features that don't work. There are no databases on the back-end and no API calls to cost you hours of work when there is a hiccup in the syncing process. Instead Opitx uses good, old fashioned **<kbd>_SAVE_</kbd>** and **_OPEN_** letting you configure whatever storage scheme works best for you. 
+Opitx is not your average markdown editor, loaded with unnecessary features that either hide your saved files in some database format you can't read or loaded with features that don't work. There are no databases on the back-end and no API calls to cost you hours of work when there is a hiccup in the syncing process. Instead Opitx uses good, old fashioned **<kbd>_SAVE_</kbd>** and **<kbd>_OPEN_</kbd>** letting you configure whatever storage scheme works best for you. 
 
 
 ## Features
@@ -50,3 +48,5 @@ Sorry, I do not use nor intend to ever use either properitery OS. While these ma
 
 **BUT** if any member of the community is interested in providing support for either platform, I would be appreciative (as would any potential Apple or Windows user). 
 
+![Opitx](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/app_resources/icon.png)
+## Stop Loosing Your Work!
