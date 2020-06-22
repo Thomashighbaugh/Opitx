@@ -13,7 +13,7 @@
     "@skidding/react-codemirror": "^1.0.0",
     "codemirror": "^5.29.0",
     "electron-is-dev": "^0.3.0",
-    "install": "^0.10.1",
+    "install": "^0.13.0",
     "lodash.assign": "^4.2.0",
     "prettier": "^1.17.1",
     "prop-types": "^15.6.0",
