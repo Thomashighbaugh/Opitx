@@ -15,7 +15,7 @@
     "electron-is-dev": "^0.3.0",
     "install": "^0.10.1",
     "lodash.assign": "^4.2.0",
-    "prettier": "^1.17.1",
+    "prettier": "^2.2.1",
     "prop-types": "^15.6.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
