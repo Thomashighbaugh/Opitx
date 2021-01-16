@@ -12,7 +12,7 @@
   "dependencies": {
     "@skidding/react-codemirror": "^1.0.0",
     "codemirror": "^5.29.0",
-    "electron-is-dev": "^0.3.0",
+    "electron-is-dev": "^1.2.0",
     "install": "^0.13.0",
     "lodash.assign": "^4.2.0",
     "prettier": "^2.2.1",
