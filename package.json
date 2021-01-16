@@ -23,7 +23,7 @@
     "react-icons": "^2.2.7",
     "react-markdown": "^2.5.0",
     "react-scripts": "4.0.1",
-    "react-split-pane": "^0.1.66",
+    "react-split-pane": "^2.0.3",
     "rpmbuild": "^0.0.22"
   },
   "scripts": {
