@@ -21,7 +21,7 @@
     "react-dom": "^15.6.1",
     "react-highlight": "^0.13.0",
     "react-icons": "^2.2.7",
-    "react-markdown": "^2.5.0",
+    "react-markdown": "^5.0.3",
     "react-scripts": "4.0.1",
     "react-split-pane": "^0.1.66",
     "rpmbuild": "^0.0.22"
