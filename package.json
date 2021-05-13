@@ -20,7 +20,7 @@
     "react": "^17.0.1",
     "react-dom": "^15.6.1",
     "react-highlight": "^0.14.0",
-    "react-icons": "^2.2.7",
+    "react-icons": "^4.2.0",
     "react-markdown": "^2.5.0",
     "react-scripts": "4.0.3",
     "react-split-pane": "^0.1.66",
