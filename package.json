@@ -11,7 +11,7 @@
   "icon": "app_resources/logo.svn",
   "dependencies": {
     "@skidding/react-codemirror": "^1.0.0",
-    "codemirror": "^5.62.0",
+    "codemirror": "^5.63.3",
     "electron-is-dev": "^2.0.0",
     "install": "^0.13.0",
     "lodash.assign": "^4.2.0",
