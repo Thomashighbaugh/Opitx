@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "concurrently": "6.1.0",
-    "electron": "13.1.6",
+    "electron": "16.0.1",
     "electron-builder": "22.11.4",
     "electron-packager": "15.2.0",
     "mocha": "9.0.2",
