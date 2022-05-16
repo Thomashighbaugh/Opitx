@@ -39,7 +39,7 @@
     "package-linux": "electron-packager .  opitx --overwrite --asar=true --platform=linux --arch=x64 --icon=app_resources/logo/svg --prune=true --out=build"
   },
   "devDependencies": {
-    "concurrently": "6.1.0",
+    "concurrently": "7.2.0",
     "electron": "13.1.6",
     "electron-builder": "22.11.4",
     "electron-packager": "15.2.0",
